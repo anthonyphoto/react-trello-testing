@@ -2,6 +2,13 @@ language: node_js
 node_js: node
 cache:
   directories:
-    - node_modules
+  - node_modules
 env:
-  - CI=true
+- CI=true
+deploy:
+  provider: heroku
+  api_key:
+    secure: gCqwTPPcf4ZKn3qErlw2hGVZinsyqToCeiLKauLmeQDbr3AybdPtr8GBRW3SLKXECu3AHxg3qPgDhsutDQ/sLuknK6IZuKkzH/7+GZJ1g0oXr1dDCU8cgTNw3g9FXqQgFLW/AX12oWKPZE2dAHPGL5TPdKUvTWORFUih4RgNGbfYukEvRbwIEREohuWW+2E1d5uqoCVE4keUe5+RbrxgoDlvoKWKvYkXzye7LNgiH4EGSiRWOsA8aokFv+w2dA8g3Hn1w3GK3nnAwj03WmvhCEkeWSFIKLJd2DOTctBGwai15EkGTkpdJCG6gNMJGSFbyj5xBEGk7NcbLMQd20A6KHmXLZt5pYuKoEsLls5/ScFC5zPAL7nZvXrsL5SK5vFjGsOQ7Dtm1jmfK0B91GjDkYyttFKSGogfa3icJ964T0OqM8hJsLVbxfzgmIm5jhK3eRspF8J+tXBNV3osokyjI0+gk0dVXi+bWXBdeUHJAUglxaWpJdgcfTihF7JIYLswZsIeRfT1jDNtpQ/S7uSRfWYKcUTC5URzQCIIY3dS4NE97Q74m575GnmR5XN0jwKj+0dAHHx3lTZusvt833nVDYtUxfJEgTb6SjoKRnxs9KJG657+RM0BVUVnqH2dwaR4y683QeP2ChbGQzD5ETix5mcvyBgHkqdI6HoB7EKtj5w=
+  app: quiet-crag-70668
+  on:
+    repo: anthonyphoto/react-trello-testing
